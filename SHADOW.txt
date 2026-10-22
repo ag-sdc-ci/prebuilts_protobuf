@@ -3,6 +3,6 @@ shadow prebuilt repo: protobuf (dual-slice: apex target + arch host)
   api-level: 34 (branch 34-20261022)
   target blobs: org.blisslabs.ag.protobuf-14000001.apex, org.blisslabs.ag.protobuf.dev-14000001.apex, org.blisslabs.ag.protobuf.doc-14000001.apex
   host blobs: protobuf-21-21.12-6-x86_64.pkg.tar.zst, protoc-gen-javanano-17.0.0-1-x86_64.pkg.tar.zst
-  dev-src: extracted dual-slice payload (target/lib64, target/share, host/bin, host/lib64, include) + root Android.bp
+  dev-src: extracted dual-slice payload (target/lib64 [.so, .a], target/share, host/bin, host/lib64 [.so, .a], include) + root Android.bp
   modules: org.blisslabs.ag.protobuf, libprotobuf-cpp-full, libprotobuf-cpp-lite, libprotobuf, libprotobuf-lite, libprotobuf-cpp-full-ndk, libprotobuf-cpp-lite-ndk, libprotoc, aprotoc, protoc, protoc-gen-javanano, protoc-3.21.12.0, libprotobuf-internal-protos, libprotobuf-internal-descriptor-proto, libprotobuf-java-full, host-libprotobuf-java-full, libprotobuf-java-lite, libprotobuf-java-nano, libprotobuf-java-micro, libprotobuf-java-util-full, libprotobuf-python
   date: 2026-10-22

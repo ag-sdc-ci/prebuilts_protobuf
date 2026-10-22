@@ -30,7 +30,7 @@ prebuilt_apex {
     installable: true,
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_library {
     name: "libprotobuf-cpp-full",
     vendor_available: true,
     product_available: true,
@@ -48,15 +48,17 @@ cc_prebuilt_library_shared {
     min_sdk_version: "29",
     target: {
         host: {
-            srcs: ["host/lib64/libprotobuf.so"],
+            shared: { srcs: ["host/lib64/libprotobuf.so"] },
+            static: { srcs: ["host/lib64/libprotobuf.a"] },
         },
         android: {
-            srcs: ["target/lib64/libprotobuf.so"],
+            shared: { srcs: ["target/lib64/libprotobuf.so"] },
+            static: { srcs: ["target/lib64/libprotobuf.a"] },
         },
     },
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_library {
     name: "libprotobuf-cpp-lite",
     vendor_available: true,
     product_available: true,
@@ -76,15 +78,17 @@ cc_prebuilt_library_shared {
     min_sdk_version: "29",
     target: {
         host: {
-            srcs: ["host/lib64/libprotobuf-lite.so"],
+            shared: { srcs: ["host/lib64/libprotobuf-lite.so"] },
+            static: { srcs: ["host/lib64/libprotobuf-lite.a"] },
         },
         android: {
-            srcs: ["target/lib64/libprotobuf-lite.so"],
+            shared: { srcs: ["target/lib64/libprotobuf-lite.so"] },
+            static: { srcs: ["target/lib64/libprotobuf-lite.a"] },
         },
     },
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_library {
     name: "libprotobuf",
     vendor_available: true,
     product_available: true,
@@ -102,15 +106,17 @@ cc_prebuilt_library_shared {
     min_sdk_version: "29",
     target: {
         host: {
-            srcs: ["host/lib64/libprotobuf.so"],
+            shared: { srcs: ["host/lib64/libprotobuf.so"] },
+            static: { srcs: ["host/lib64/libprotobuf.a"] },
         },
         android: {
-            srcs: ["target/lib64/libprotobuf.so"],
+            shared: { srcs: ["target/lib64/libprotobuf.so"] },
+            static: { srcs: ["target/lib64/libprotobuf.a"] },
         },
     },
 }
 
-cc_prebuilt_library_shared {
+cc_prebuilt_library {
     name: "libprotobuf-lite",
     vendor_available: true,
     product_available: true,
@@ -128,10 +134,12 @@ cc_prebuilt_library_shared {
     min_sdk_version: "29",
     target: {
         host: {
-            srcs: ["host/lib64/libprotobuf-lite.so"],
+            shared: { srcs: ["host/lib64/libprotobuf-lite.so"] },
+            static: { srcs: ["host/lib64/libprotobuf-lite.a"] },
         },
         android: {
-            srcs: ["target/lib64/libprotobuf-lite.so"],
+            shared: { srcs: ["target/lib64/libprotobuf-lite.so"] },
+            static: { srcs: ["target/lib64/libprotobuf-lite.a"] },
         },
     },
 }
