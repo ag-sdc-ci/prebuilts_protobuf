@@ -268,7 +268,7 @@ java_import {
         "target/share/libprotobuf-java-lite/protobuf-javalite-3.25.3.jar",
     ],
     host_supported: true,
-    min_sdk_version: "34",
+    min_sdk_version: "29",
     prefer: true,
 }
 
